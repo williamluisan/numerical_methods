@@ -1,7 +1,8 @@
 ## ABOUT THIS CODE
 This is just my assignment as Civil Engineer postgraduate student on first semester.
+
 Tools:
-  - python 3 and numpy library
+  - **python 3** and **numpy** library
 
 ## Available methods to learn
 1. Inversion with python3
