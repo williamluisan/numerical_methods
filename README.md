@@ -1,11 +1,13 @@
 ## ABOUT THIS CODE
 This is just my assignment as Civil Engineer postgraduate student on first semester.
+Tools:
+  - python 3 and numpy library
 
 ## Available methods to learn
-1. Inversion
-2. Cramers's rule
-3. Gauss Elimination
-4. Gauss-Jordan Algorithm
+1. Inversion with python3
+2. Cramers's rule with python3
+3. Gauss Elimination with python3
+4. Gauss-Jordan Algorithm with python3
 
 ## Source Code credit (reference)
 Special thanks to: 
