@@ -13,6 +13,6 @@ Tools:
 
 ## Source Code credit (reference)
 Special thanks to: 
-1. Cramers's rule (https://rosettacode.org/wiki/Cramer%27s_rule#Prolog)
+1. Cramers's rule (https://rosettacode.org/wiki/Cramer%27s_rule#Python)
 2. Gauss Elimination (https://www.codesansar.com/numerical-methods/gauss-elimination-method-python-program.htm)
 3. Gauss-Jordan (https://www.codesansar.com/numerical-methods/gauss-jordan-method-python-program-output.htm)
