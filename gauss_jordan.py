@@ -57,4 +57,8 @@ class GaussJordan:
 #         for j in range(n+1):
 #             a[i][j] = float(input( 'mtx['+str(i)+']['+ str(j)+']='))
 
+#     # print matrix
+#     print("\n MATRIX PERSAMAAN")
+#     print(a, "\n")
+
 #     gauss_jordan.gauss_jordan(n, a, x)

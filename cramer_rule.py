@@ -50,18 +50,22 @@ class CramerRule:
 
 ### UNCOMMENT THIS IF THE SCRIPT WANT TO BE EXECUTED ALONE ###
 # if __name__ == "__main__":
-#     cramer = CramerRule()
+    # cramer = CramerRule()
 
-#     # jumlah n persamaan yang akan diselesaikan
-#     n = int(input('Jumlah (n) persamaan: '))
+    # # jumlah n persamaan yang akan diselesaikan
+    # n = int(input('Jumlah (n) persamaan: '))
 
-#     a = np.zeros((n,n+1))
-#     x = np.zeros(n)
+    # a = np.zeros((n,n+1))
+    # x = np.zeros(n)
 
-#     # Memasukkan input matrix
-#     print("\nMasukkan input persamaan dalam bentuk matrix (mtx) %dx%d" %(n, n))
-#     for i in range(n):
-#         for j in range(n+1):
-#             a[i][j] = float(input( 'mtx['+str(i)+']['+ str(j)+']='))
+    # # Memasukkan input matrix
+    # print("\nMasukkan input persamaan dalam bentuk matrix (mtx) %dx%d" %(n, n))
+    # for i in range(n):
+    #     for j in range(n+1):
+    #         a[i][j] = float(input( 'mtx['+str(i)+']['+ str(j)+']='))
 
-#     cramer.cramer_rule(n, a)
+    # # print matrix
+    # print("\n MATRIX PERSAMAAN")
+    # print(a, "\n")
+
+    # cramer.cramer_rule(n, a)
