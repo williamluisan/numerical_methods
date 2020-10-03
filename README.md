@@ -6,10 +6,14 @@ Tools:
   - **numpy** library
 
 ## Available methods to learn
+(linear equation)
 1. Inversion with python3
 2. Cramers's rule with python3
 3. Gauss Elimination with python3
 4. Gauss-Jordan Algorithm with python3
+(non-linear equation)
+5. Bisection with python3
+6. False position with python3
 
 ## Source Code credit (reference)
 Special thanks to: 
