@@ -1,7 +1,7 @@
 from math import sqrt, pow
 from tabulate import tabulate
 
-class Bisection:
+class FalsePosition:
     def fx(self, fx, x):
         return eval(fx)
     
@@ -10,7 +10,7 @@ class Bisection:
 
 ### UNCOMMENT THIS IF THE SCRIPT WANT TO BE EXECUTED ALONE ###
 if __name__ == "__main__":
-    bis = Bisection()
+    flp = FalsePosition()
 
     print("""\nSymbols:
 1. for 'power' calculation use: pow(x, y) --> x raised to the power y
@@ -33,12 +33,12 @@ Masukkan persamaan: pow(x, 3) + pow(x,2)*sqrt(3) - 2*x - 2*sqrt(3)
         i+=1
 
         # nilai fx0 dan fx1
-        fx0 = bis.fx(fx, x0)
-        fx1 = bis.fx(fx, x1)
+        fx0 = flp.fx(fx, x0)
+        fx1 = flp.fx(fx, x1)
         
         # nilai xr, fxr dan toleransi
-        xr = bis.xr(x0, x1, fx0, fx1)
-        fxr = bis.fx(fx, xr)
+        xr = flp.xr(x0, x1, fx0, fx1)
+        fxr = flp.fx(fx, xr)
         tolerance = fx0*fxr
 
         result.append([i, x0, x1, fx0, fx1, xr, fxr, tolerance])
@@ -53,5 +53,5 @@ Masukkan persamaan: pow(x, 3) + pow(x,2)*sqrt(3) - 2*x - 2*sqrt(3)
         if (abs(tolerance) < float(format(1.0e-10, '.20f'))):
             break
     
-    print(tabulate(result, headers=["Itr", "x0", "x1", "fx0", "fx1", "xr", "fxr", "(fx0*fxr)"]))
+    print(tabulate(result, headers=["Itr", "x0", "x1", "f(x0)", "f(x1)", "xr", "f(xr)", "(f(x0)*f(xr))"]))
     print("\nMaka x = %.4f\n" % xr)

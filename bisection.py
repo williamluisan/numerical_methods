@@ -50,5 +50,5 @@ Masukkan persamaan: pow(x, 3) + pow(x,2)*sqrt(3) - 2*x - 2*sqrt(3)
         if (abs(tolerance) < float(format(1.0e-10, '.20f'))):
             break
     
-    print(tabulate(result, headers=["Itr", "x0", "x1", "fx0", "fx1", "xr", "fxr", "(fx0*fxr)"]))
+    print(tabulate(result, headers=["Itr", "x0", "x1", "f(x0)", "f(x1)", "xr", "f(xr)", "f(x0)*f(xr)"]))
     print("\nMaka x = %.4f\n" % xr)
