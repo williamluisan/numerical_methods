@@ -14,6 +14,8 @@ Tools:
 - (non-linear equation)
 5. Bisection with python3
 6. False position with python3
+7. Newton-Raphson with python3
+8. Generalized Newton (Successive Over Relaxation Method)
 
 ## Source Code credit (reference)
 Special thanks to: 
