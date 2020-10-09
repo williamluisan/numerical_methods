@@ -2,16 +2,16 @@ from math import sqrt, pow
 from tabulate import tabulate
 import sympy as sym
 
-class NRaphson:
+class GnrzNewton:
     def fx(self, fx, x):
         return eval(str(fx))
     
-    def xr(self, x, fx, dfdx):
-        return x - (fx/dfdx)
+    def xr(self, x, w, fx, dfdx):
+        return x - (w * (fx/dfdx))
 
 ### UNCOMMENT THIS IF THE SCRIPT WANT TO BE EXECUTED ALONE ###
 if __name__ == "__main__":
-    nr = NRaphson()
+    nr = GnrzNewton()
 
     print("""\nSymbols:
 1. for 'power' calculation use: x**y --> x raised to the power y
@@ -19,15 +19,16 @@ if __name__ == "__main__":
 Input (equation) example:
 Masukkan persamaan: x**3 + x**2*sqrt(3) - 2*x - 2*sqrt(3)
 
-==NEWTON-RAPHSON==""")
+==GENERALIZED NEWTON==""")
 
     persamaan = input("Masukkan persamaan: ")
     fx   = persamaan
     dfdx = str(sym.diff(persamaan))
     x = float(input("masukkan nilai awal x0 = "))
+    w = float(input("masukkan (w) Over Relaxation Factor = "))
     print("\nPersamaan yang akan dicari akarnya\nf(x) =", persamaan)
     print("df/dx =", dfdx, "\n")
-    print("dan nilai awal: x0=", x, "\n")
+    print("dengan nilai awal: x0=", x, "dan w=", w, "\n")
     
     i = 0
     result = []
@@ -43,7 +44,7 @@ Masukkan persamaan: x**3 + x**2*sqrt(3) - 2*x - 2*sqrt(3)
             break
 
         # nilai xr
-        xr = nr.xr(x, fx_res, dfdx_res)
+        xr = nr.xr(x, w, fx_res, dfdx_res)
 
         result.append([i, x, abs(fx_res), dfdx_res, xr])
         
